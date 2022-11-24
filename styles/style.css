@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --c-white: #fff;
+  --c-red: #e30059;
+  --c-yellow: #ffd05f;
+  --c-green: #25ae93;
+  --c-teal: #46becd;
+  --c-blue: #606eb3;
+  --c-magenta: #b9005f;
+  --c-huistijl-magenta: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
+  --c-brown: #6a4955;
+  --c-dirt: #c9b5b2;
+  --c-black: #111;
+  --c-grey: #c6c6c6;
+}
+
+@font-face {
+  font-family: "Fira Sans Medium";
+  src: url("/fonts/FiraSans-Medium.ttf");
+}
+
+body {
+  background-color: var(--c-white);
+  font-family: "Fira Sans medium";
+}
+
+/* ---------------Navigatie--------------- */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  background: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  height: 100%;
+  width: 18vw;
+}
+
+svg {
+  width: 5rem;
+  fill: var(--c-white);
+}
+
+.innermap a {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+  transition: 0.2s ease-in;
+}
+
+.innermap p {
+  padding-left: 1rem;
+}
+
+.innermap i {
+  font-size: 1.5rem;
+  color: var(--c-magenta);
+  position: absolute;
+  padding-left: 1.75rem;
+}
+
+.innermap a:hover {
+  transition: 0.5s ease-out;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  border-radius: 0.6rem;
+}
+
+/* --------------------------------------------- */
+
+/* --------------Main--------------------------- */
+.main-background {
+  background-color: var(--c-grey);
+  padding: 0.5rem;
+}
+
+.main {
+  background-color: var(--c-white);
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  width: 62vw;
+  padding: 2rem;
+}
+
+/* header {
+  position: sticky;
+  top: 0;
+} */
+
+header img {
+  width: 12rem;
+}
+
+main h1 {
+  color: #e30059;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+}
+
+main p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------------- */
+
+/* -------------Footer-------------------------- */
+
+footer {
+  background-color: var(--c-magenta);
+  /* height: 5vh; */
+}
