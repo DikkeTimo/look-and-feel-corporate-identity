@@ -145,3 +145,49 @@ footer {
 .socials p {
   color: var(--c-white);
 }
+
+/* ------------------------------------------------ */
+/* ----------------------Mapjes uitklapbaar-------------------- */
+
+.box {
+  margin-top: 5rem;
+}
+
+.accordion {
+  background: var(--c-huistijl-magenta);
+  color: var(--c-white);
+  border-style: solid;
+  border-color: var(--c-white);
+  border-radius: 0.6rem;
+  width: 50rem;
+  height: 4em;
+  font-size: 1rem;
+}
+
+.accordion:after {
+  color: white;
+  content: "\002B";
+  float: right;
+  padding-right: 0.5rem;
+}
+
+.active:after {
+  color: rgb(255, 253, 253);
+  content: "\2212";
+}
+
+.accordion:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+.panel {
+  display: none;
+  background-color: var(--c-grey);
+  border-radius: 0.6rem;
+  width: 50rem;
+  text-align: left;
+  padding: 2em;
+}
+
+/* ------------------------------------------------------------------ */
