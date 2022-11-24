@@ -17,7 +17,7 @@
   --c-brown: #6a4955;
   --c-dirt: #c9b5b2;
   --c-black: #111;
-  --c-grey: #c6c6c6;
+  --c-grey: #eaeaea;
 }
 
 @font-face {
@@ -81,7 +81,6 @@ svg {
 /* --------------Main--------------------------- */
 .main-background {
   background-color: var(--c-grey);
-  padding: 0.5rem;
 }
 
 .main {
@@ -92,19 +91,22 @@ svg {
   padding: 2rem;
 }
 
-/* header {
+header {
+  background-color: var(--c-white);
   position: sticky;
   top: 0;
-} */
+  height: 4rem;
+}
 
 header img {
-  width: 12rem;
+  width: 14rem;
 }
 
 main h1 {
   color: #e30059;
   font-size: 2.8rem;
   margin-top: 2rem;
+  width: 20rem;
 }
 
 main p {
@@ -122,6 +124,24 @@ hr {
 /* -------------Footer-------------------------- */
 
 footer {
-  background-color: var(--c-magenta);
-  /* height: 5vh; */
+  background: var(--c-huistijl-magenta);
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  width: 62vw;
+  height: 20vh;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.socials img {
+  width: 4rem;
+}
+
+.socials p {
+  color: var(--c-white);
 }
