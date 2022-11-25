@@ -45,8 +45,13 @@ body {
 }
 
 svg {
-  width: 5rem;
   fill: var(--c-white);
+  position: relative;
+  width: 85px;
+}
+
+.innermap {
+  position: relative;
 }
 
 .innermap a {
@@ -56,17 +61,24 @@ svg {
   align-items: center;
   text-decoration-line: none;
   transition: 0.2s ease-in;
+  width: initial;
 }
 
 .innermap p {
-  padding-left: 1rem;
+  min-width: 100px;
+  padding-left: 10px;
+  width: auto;
+  padding-left: 10px;
 }
 
 .innermap i {
-  font-size: 1.5rem;
+  font-size: 25px;
   color: var(--c-magenta);
-  position: absolute;
-  padding-left: 1.75rem;
+  position: fixed;
+  left: 3%;
+  margin-top: 5px;
+  /* padding-left: 30px; */
+  margin-left: 0 auto;
 }
 
 .innermap a:hover {
@@ -151,15 +163,16 @@ footer {
 
 .box {
   margin-top: 5rem;
+  width: 62vw;
 }
 
 .accordion {
-  background: var(--c-huistijl-magenta);
+  background-color: var(--c-black);
   color: var(--c-white);
   border-style: solid;
   border-color: var(--c-white);
   border-radius: 0.6rem;
-  width: 50rem;
+  width: 56.5vw;
   height: 4em;
   font-size: 1rem;
 }
@@ -185,7 +198,7 @@ footer {
   display: none;
   background-color: var(--c-grey);
   border-radius: 0.6rem;
-  width: 50rem;
+  width: 55vw;
   text-align: left;
   padding: 2em;
 }
