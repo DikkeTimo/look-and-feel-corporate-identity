@@ -7,17 +7,20 @@
 :root {
   /* color */
   --c-white: #fff;
-  --c-red: #e30059;
-  --c-yellow: #ffd05f;
-  --c-green: #25ae93;
-  --c-teal: #46becd;
-  --c-blue: #606eb3;
-  --c-magenta: #b9005f;
-  --c-huistijl-magenta: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
-  --c-brown: #6a4955;
-  --c-dirt: #c9b5b2;
-  --c-black: #111;
-  --c-grey: #eaeaea;
+  --magenta: #b9005f;
+  --teks-zwart: #111;
+  --achtergrond: #eaeaea;
+  --huistijl: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
+  --panel-background: rgb(219, 219, 219);
+
+  --radius: 0.6rem;
+  --width: 49rem;
+}
+
+[data-theme="dark"] {
+  --huistijl: #0d0048;
+  --achtergrond: #0d0048;
+  --magenta: #0d0048;
 }
 
 @font-face {
@@ -37,14 +40,14 @@ body {
   flex-direction: column;
   justify-content: space-around;
   position: fixed;
-  background: linear-gradient(123.52deg, #cf0d4e 0%, #cd0069 100%);
+  background: var(--huistijl);
   border-radius: 0 1rem 1rem 0;
   padding: 1rem;
   height: 100%;
   width: 18vw;
 }
 
-svg {
+svg:first-child {
   fill: var(--c-white);
   position: relative;
   width: 85px;
@@ -73,11 +76,10 @@ svg {
 
 .innermap i {
   font-size: 25px;
-  color: var(--c-magenta);
+  color: var(--magenta);
   position: fixed;
   left: 3%;
   margin-top: 5px;
-  /* padding-left: 30px; */
   margin-left: 0 auto;
 }
 
@@ -85,29 +87,32 @@ svg {
   transition: 0.5s ease-out;
   background-color: var(--c-white);
   color: var(--c-black);
-  border-radius: 0.6rem;
+  border-radius: var(--radius);
 }
 
 /* ----------------------------------------------------- */
 
 /* ----------------------Main--------------------------- */
 .main-background {
-  background-color: var(--c-grey);
+  background-color: var(--achtergrond);
 }
 
 .main {
   background-color: var(--c-white);
-  border-radius: 0.6rem;
+  border-radius: var(--radius);
   margin: 0 auto;
   width: 62vw;
   padding: 2rem;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--c-white);
   position: sticky;
   top: 0;
   height: 4rem;
+  z-index: 2;
 }
 
 header img {
@@ -122,6 +127,7 @@ main h1 {
 }
 
 main p {
+  color: var(--c-tekst);
   font-size: 1.3rem;
   line-height: 1.6;
   margin-top: 2rem;
@@ -141,8 +147,8 @@ hr {
 /* -------------Footer-------------------------- */
 
 footer {
-  background: var(--c-huistijl-magenta);
-  border-radius: 0.6rem;
+  background: var(--huistijl);
+  border-radius: var(--radius);
   margin: 0 auto;
   width: 62vw;
   height: 20vh;
@@ -168,16 +174,15 @@ footer {
 
 .box {
   margin-top: 5rem;
-  width: 62vw;
 }
 
 .accordion {
-  background-color: var(--c-black);
+  background-color: var(--magenta);
   color: var(--c-white);
   border-style: solid;
   border-color: var(--c-white);
-  border-radius: 0.6rem;
-  width: 56.5vw;
+  border-radius: var(--radius);
+  width: var(--width);
   height: 4em;
   font-size: 1rem;
 }
@@ -201,11 +206,84 @@ footer {
 
 .panel {
   display: none;
-  background-color: var(--c-grey);
-  border-radius: 0.6rem;
-  width: 55vw;
+  background-color: var(--panel-background);
+  border-radius: var(--radius);
+  width: var(--width);
   text-align: left;
   padding: 2em;
 }
 
+pre {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
 /* ------------------------------------------------------------------ */
+
+/* Darkmode switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-wrapper p {
+  margin-left: 0.5rem;
+}
+
+.theme-switch {
+  height: 2rem;
+  position: relative;
+  width: 3.75rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--achtergrond);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* darkmode switch end */
+
+/* --------------darkmode-------------- */
+
+/* @media (prefers-color-scheme: dark) {
+} */
