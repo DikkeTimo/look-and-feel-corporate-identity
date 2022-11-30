@@ -14,7 +14,7 @@
   --panel-background: rgb(219, 219, 219);
 
   --radius: 0.6rem;
-  --width: 49rem;
+  --width: 90%;
 }
 
 [data-theme="dark"] {
@@ -103,6 +103,7 @@ svg:first-child {
   margin: 0 auto;
   width: 62vw;
   padding: 2rem;
+  padding-bottom: 5rem;
 }
 
 header {
@@ -134,7 +135,7 @@ main p {
 }
 
 main svg {
-  width: 50rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -205,6 +206,7 @@ footer {
 }
 
 .panel {
+  font-size: 16px;
   display: none;
   background-color: var(--panel-background);
   border-radius: var(--radius);
@@ -282,8 +284,3 @@ input:checked + .slider:before {
 }
 
 /* darkmode switch end */
-
-/* --------------darkmode-------------- */
-
-/* @media (prefers-color-scheme: dark) {
-} */
