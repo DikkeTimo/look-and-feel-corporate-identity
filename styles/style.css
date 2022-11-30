@@ -18,9 +18,10 @@
 }
 
 [data-theme="dark"] {
-  --huistijl: #0d0048;
-  --achtergrond: #0d0048;
-  --magenta: #0d0048;
+  --huistijl: #010004;
+  --achtergrond: #000000;
+  --magenta: #000000;
+  --c-white: rgb(174, 174, 174);
 }
 
 @font-face {
@@ -148,6 +149,7 @@ hr {
 /* -------------Footer-------------------------- */
 
 footer {
+  position: relative;
   background: var(--huistijl);
   border-radius: var(--radius);
   margin: 0 auto;
@@ -156,6 +158,7 @@ footer {
 }
 
 .socials {
+  position: sticky;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -168,6 +171,40 @@ footer {
 
 .socials p {
   color: var(--c-white);
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  max-width: 500px;
+}
+
+.feedback h4 {
+  margin: 1rem;
+  color: #fff;
+  height: 1rem;
+}
+
+.item {
+  width: 90px;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.radio {
+  display: none;
+}
+.radio ~ span {
+  font-size: 2rem;
+  filter: grayscale(100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.radio:checked ~ span {
+  filter: grayscale(0);
+  font-size: 4rem;
 }
 
 /* ------------------------------------------------------------ */
@@ -213,6 +250,16 @@ footer {
   width: var(--width);
   text-align: left;
   padding: 2em;
+}
+
+.panel p {
+  font-size: 16px;
+}
+
+code {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
 }
 
 pre {
