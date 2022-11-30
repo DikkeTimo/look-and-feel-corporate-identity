@@ -173,7 +173,7 @@ footer {
   color: var(--c-white);
 }
 
-.feedback {
+/* .feedback {
   display: flex;
   flex-direction: row;
   float: left;
@@ -205,7 +205,7 @@ footer {
 .radio:checked ~ span {
   filter: grayscale(0);
   font-size: 4rem;
-}
+} */
 
 /* ------------------------------------------------------------ */
 /* ----------------------Mapjes uitklapbaar-------------------- */
@@ -331,3 +331,38 @@ input:checked + .slider:before {
 }
 
 /* darkmode switch end */
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main h1 {
+    font-size: 25px;
+  }
+
+  .main img {
+    width: 8rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-switch-wrapper {
+    margin-left: 5%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
