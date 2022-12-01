@@ -144,6 +144,50 @@ hr {
   margin-top: 1rem;
 }
 
+/* Style the navigation menu */
+.topnav {
+  background-color: #333;
+  border-radius: var(--radius);
+  position: relative;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  border-radius: var(--radius);
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  border-radius: var(--radius);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
 /* --------------------------------------------- */
 
 /* -------------Footer-------------------------- */
@@ -172,41 +216,6 @@ footer {
 .socials p {
   color: var(--c-white);
 }
-
-/* .feedback {
-  display: flex;
-  flex-direction: row;
-  float: left;
-  max-width: 500px;
-}
-
-.feedback h4 {
-  margin: 1rem;
-  color: #fff;
-  height: 1rem;
-}
-
-.item {
-  width: 90px;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-}
-.radio {
-  display: none;
-}
-.radio ~ span {
-  font-size: 2rem;
-  filter: grayscale(100);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.radio:checked ~ span {
-  filter: grayscale(0);
-  font-size: 4rem;
-} */
-
 /* ------------------------------------------------------------ */
 /* ----------------------Mapjes uitklapbaar-------------------- */
 
@@ -341,6 +350,10 @@ input:checked + .slider:before {
     display: none;
   }
 
+  .topnav {
+    display: block;
+  }
+
   .main h1 {
     font-size: 25px;
   }
@@ -354,7 +367,6 @@ input:checked + .slider:before {
   }
 
   header {
-    display: flex;
     align-items: center;
   }
 
