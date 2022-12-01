@@ -12,6 +12,12 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+De Vervoerregio is een samenwerkingsverband van veertien gemeenten op het gebied van verkeer en openbaar vervoer. Om op een goede manier te overleggen en besluiten te nemen zijn er diverse (bestuurs)vormen van overleg: De regioraad, het dagelijks bestuur, portefeuillehoudersoverleggen en commissies.
+
+Het doel is om een website te maken voor de partners van Vervoerregio Amsterdam om te laten zien wat je moet doen om de desbetreffende website toegankelijk te maken. De toegankelijkheid wordt een groot probleem als mensen met een beperking websites proberen te bezoeken maar deze niet goed toegankelijk zijn.
+
+Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zij moeten doen om hun website toegankelijker te maken.
+
 De userstory die ik heb uitgewerkt:
 
 <img width="60%" src="assets/Backlog-item.png">
