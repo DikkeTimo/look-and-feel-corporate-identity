@@ -45,18 +45,3 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-
-var btn = $("#button");
-
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
-  } else {
-    btn.removeClass("show");
-  }
-});
-
-btn.on("click", function (e) {
-  e.preventDefault();
-  $("main, html, body").animate({ scrollTop: 0 }, "300");
-});
