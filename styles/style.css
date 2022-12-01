@@ -172,7 +172,6 @@ hr {
   background: black;
   border-radius: var(--radius);
   display: block;
-  position: absolute;
   right: 0;
   top: 0;
 }
