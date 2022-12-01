@@ -14,7 +14,12 @@
 
 De userstory die ik heb uitgewerkt:
 
-<img width="70%" src="assets/Backlog-item.png">
+<img width="60%" src="assets/Backlog-item.png">
+<br>
+<img width="50%" src="assets/front-page.png">
+<img width="50%" src="assets/front-page-dark.png">
+<br>
+<img width="50%" src="assets/frontpage-mobile.png">
 
 ## Kenmerken
 
