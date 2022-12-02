@@ -347,6 +347,15 @@ input:checked + .slider:before {
 
 /* darkmode switch end */
 
+/* ------------------------ontwikkelaar page---------------------- */
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------------- */
+
 @media screen and (min-width: 350px) and (max-width: 600px) {
   body {
     width: 100%;
