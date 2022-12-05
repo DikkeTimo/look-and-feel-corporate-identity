@@ -20,7 +20,8 @@ Vervoerregio Amsterdam wil kunnen laten zien aan partners wat zij moeten doen om
 
 De userstory die ik heb uitgewerkt:
 
-<img width="60%" src="assets/Backlog-item.png">
+<img width="50%" src="assets/Backlog-item.png">
+<img width="50%" src="assets/backlogitem2.png">
 <br>
 <img width="50%" src="assets/front-page.png">
 <img width="50%" src="assets/front-page-dark.png">
@@ -31,10 +32,18 @@ De userstory die ik heb uitgewerkt:
 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
+Er is gebruikt gemaakt van HTML, CSS en JS. Het zijn allemaa aparte html pagina's. Met CSS is de styling gedaan en met JS is de darkmode en klickbare mapjes gemaakt.
+
 ## Bronnen
 
 ## Licentie
 
+<ul>
+    <li>https://www.vervoerregio.nl/</li>
+    <li>https://wcag.nl/kennisbank/</li>
+    <li>https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x</li>
+    <li>https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8</li>
+  </ul>
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
